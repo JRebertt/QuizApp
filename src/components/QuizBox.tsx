@@ -10,7 +10,7 @@ export function QuizBox() {
           <h1 className="font-semibold sm:text-lg font-Poppins">
             Awesome Quiz Application
           </h1>
-          <div className="flex justify-center items-center w-56 sm:w-36 rounded-md h-11 gap-3  bg-blue-300 select-none ">
+          <div className="flex justify-center items-center w-40 sm:w-36 rounded-md h-11 gap-3  bg-blue-300 select-none ">
             <span className="font-medium">Time Left</span>
             <span className="font-medium w-11 h-8 rounded-md bg-[#343a40] text-white text-center">
               15
@@ -19,10 +19,15 @@ export function QuizBox() {
         </div>
         <Separator.Root className="border-b-2 border-gray-200 " />
 
-        <OptionList />
+        <OptionList answer="Teste" sort={false} title="Testando" />
 
-        <div className="flex justify-end gap-5 text-white text-base font-medium ">
-          <span>2 of 5 Questions</span>
+        <div className="flex justify-between px-2 gap-5 text-white text-base font-medium ">
+          <span className="text-black flex gap-1">
+            <span>2</span>
+            of
+            <span>5</span>
+            Questions
+          </span>
           <button
             type="button"
             className="h-10 w-24 rounded-md bg-[#007bff] ease-in-out duration-300 hover:bg-[#0263ca] "
